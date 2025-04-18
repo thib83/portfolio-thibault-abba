@@ -45,7 +45,6 @@ header {
   border: 3px solid var(--accent-color);
 }
 
-
 .hero h1 {
   font-size: 2.5rem;
 }
@@ -118,7 +117,7 @@ p {
 }
 
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   background-color: var(--accent-color);
@@ -143,7 +142,7 @@ p {
 }
 
 .timeline-container::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 20px;
   width: 25px;
@@ -386,4 +385,78 @@ footer {
   border-top: 1px solid #ddd;
   font-size: 0.9rem;
   color: #666;
+}
+
+@media screen and (max-width: 768px) {
+  .hero img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .hero-buttons a {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+
+  .timeline::after {
+    left: 10px;
+  }
+
+  .timeline-container {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+  }
+
+  .timeline-container.left,
+  .timeline-container.right {
+    left: 0;
+  }
+
+  .timeline-container.left::before {
+    left: 0;
+  }
+
+  .timeline-container.right::before {
+    left: 0;
+  }
+
+  .skills-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .project {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 15px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .hero-icon i {
+    font-size: 2rem;
+  }
 }
